@@ -16,7 +16,8 @@ public class MedicoRequestDTO {
     @NotBlank(message = "Email é obrigatório")
     @Email(message = "Email inválido")
     private String email;
-
+    
+    @Size(max = 11, message = "Telefone deve ter no máximo 11 dígitos")
     private String telefone;
 
     public String getNome() { return nome; }
